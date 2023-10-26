@@ -1,6 +1,6 @@
 # LimeControl2: Track and Manage Survey Solicitations
 
-## Intended use:
+## Intended Use
 
 LimeControl2 is designed to streamline and monitor telephone survey solicitations for LimeSurvey surveys.
 

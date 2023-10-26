@@ -8,11 +8,12 @@ LimeControl2 is designed to streamline and monitor telephone survey solicitation
 
 + **Survey progress tracking:** The app offers detailed information about who responded to the survey and when. It also monitors invitations and reminders.
 + **Multiple Survey Support:** The app can support several surveys simultaneously. You can switch between active surveys using a dropdown menu.
+
+![UI](screenshots/tracking.png?raw=true "Survey tracking interface")
+
 + **Reminders:** A key feature is the ability to send reminders to individual respondents. Following up a phone conversation with an email can significantly boost the response rate.
 + **Note taking.** After contacting a study participant, you can take notes and update their email addresses. All this data is stored in your survey's participants table.
 + **Excel Export.** You can export your data to Excel at any time. This data is also accessible via LimeSurvey.
-
-![UI](screenshots/tracking.png?raw=true "Survey tracking interface")
 
 ### User Management
 

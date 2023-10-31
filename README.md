@@ -55,7 +55,7 @@ For simplicity's sake, all data entered into the app is stored in the correspond
 
 > In theory, all the credentials could be hardcoded in the app.R file, but for security reasons, this approach is not recommended.
 
-#### 2. Modifying the `app.R` File:
+#### 2. Modify the `app.R` file:
 - Head over to the `EDITABLE SECTION`.
 - Populate the `user_base_module_tbl` tibble with the required number of users and provide passwords. Fetch passwords for LimeSurvey from the `.Renviron` file.
 - Ensure the correct URL (`URL_TO_RC2_API` from `.Renviron`) is assigned to the `url` variable in `app.R`.

@@ -34,9 +34,9 @@ For simplicity's sake, all data entered into the app is stored in the correspond
 
 #### 2. LimeSurvey Configuration:
 - Navigate to `Survey participants` → `Manage attributes` within LimeSurvey.
-- Add two columns: 
+- Add two additional columns (use the `Add fields` option in the `Manage attributes` view): 
   - For caller's notes using the app.
-  - Datestamps for each note. Use the `Add fields` option in the `Manage attributes` view.
+  - Datestamps for each note.
 - Make sure that the data set includes the phone numbers of the respondents. Duh.
 - Enable settings to capture the time taken for survey completion and to timestamp responses.
 - Ensure answers remain non-anonymous.

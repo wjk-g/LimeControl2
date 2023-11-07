@@ -62,3 +62,4 @@ For simplicity's sake, all data entered into the app is stored in the correspond
 - Assign the survey IDs (from `.Renviron`) to variables like `sid1`, `sid2`, etc., and include them in the `surveyIDs` vector.
 - Tweak parameters such as `actual_colnames`, `displayed_colnames`, `hide` (columns to be hidden), and `editable` (columns that can be edited) based on the structure and needs of your respondent table.
 - Change the `title`.
+ 

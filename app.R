@@ -549,6 +549,15 @@ server <- function(input, output, session) {
     # This part is necessary because Lime API doesn't allow you to send reminders
     # to a user if remindersent != "N" or remindercount > 0.
     # Remember that this operation modifies participant data on LimeSurvey.
+    # get the true reminder count
+    true_remindercount <- call_limer_mod(session_key = session_key(),
+                                         method = "get_participant_properties",
+                                         params = list(iSurveyID = surveyID(),
+                                                       aTokenQueryProperties=selected,
+                                                       aTokenProperties = list("remindercount")
+                                         ))
+    
+    # set reminder count to 0 to satisfy lime's whimsies
     call_limer_mod(session_key = session_key(),
                    method = "set_participant_properties", 
                    params = list(iSurveyID = surveyID(),
@@ -562,6 +571,13 @@ server <- function(input, output, session) {
                                  aTokenIds=list(real_tid), # this is in fact a tid number, not a row number
                                  iMaxReminders=1
                    ))
+    
+    # and now set the reminder count to the true value
+    call_limer_mod(session_key = session_key(),
+                   method = "set_participant_properties", 
+                   params = list(iSurveyID = surveyID(),
+                                 aTokenQueryProperties=selected,
+                                 aTokenData = list(remindercount = as.numeric(true_remindercount)+1) ))
     
   })
   
